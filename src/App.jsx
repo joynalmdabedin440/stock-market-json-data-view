@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     const fetchTrades = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/');
+        const response = await axios.get('https://stock-market-server-123.vercel.app/');
         setTrades(response.data.slice(0, visibleCount));
       } catch (error) {
         console.error('Error fetching trade data:', error);
